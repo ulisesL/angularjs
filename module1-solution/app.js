@@ -18,15 +18,12 @@
     $scope.message = "";
     $scope.messageClass = defaultMsgClass;
 
-    // "alert alert-danger"
-    // "alert alert-success"
-    // "alert alert-warning"
     function countDishes(){
 
-      let dishes = $scope.dishes.split(",");
-      let numDishes = 0;
+      var dishes = $scope.dishes.split(",");
+      var numDishes = 0;
 
-      for( let elem = 0; elem < dishes.length; elem++){
+      for( var elem = 0; elem < dishes.length; elem++){
         if( dishes[elem].trim() !== "" ){
           numDishes++;
         }
